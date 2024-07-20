@@ -1,0 +1,24 @@
+/* @import url("font url") */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root[class~="light"] {
+      --color-primary: 0 0 0;
+      --color-secondary: 150 150 150;
+
+      --color-light: 255 255 255;
+      --color-dark: 0 0 0;
+    }
+  
+    :root[class~="dark"] {
+      --color-secondary: 0 0 0;
+      --color-primary: 150 150 150;
+
+      --color-dark: 255 255 255;
+      --color-light: 0 0 0;
+    }
+
+  }
