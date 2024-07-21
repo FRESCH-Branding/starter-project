@@ -30,5 +30,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  plugins: ["~/plugins/imagekit.ts"],
+  plugins: ["~/plugins/imagekit.ts", "~/plugins/fontawesome.ts"],
 });

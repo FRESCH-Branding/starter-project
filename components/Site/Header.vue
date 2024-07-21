@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="flex justify-between p-7 text-[1.25rem] bg-secondary text-primary"
-  >
+  <header class="flex justify-between p-7 text-20 bg-secondary text-primary">
     <NuxtLink to="/">
       <img />
       logo
@@ -23,10 +21,8 @@
     </ul>
 
     <button @click="toggleDarkMode" class="color-toggle">
-      <font-awesome-icon
-        size="lg"
-        :icon="isClicked ? 'fa-solid fa-lightbulb ' : 'fa-regular fa-lightbulb'"
-        className="{`text-${var(--color-primary))}`}"
+      <FontAwesomeIcon
+        :icon="isClicked ? ['fas', 'lightbulb'] : ['far', 'lightbulb']"
         :id="isClicked ? 'dark' : 'light'"
       />
     </button>
