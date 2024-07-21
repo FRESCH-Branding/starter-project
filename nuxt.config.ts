@@ -1,27 +1,28 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
-  devtools: { 
-    enabled: false 
+  devtools: {
+    enabled: false,
   },
   css: [
-    '~/assets/css/tailwind.css',
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    "~/assets/css/tailwind.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
   ],
-  
   runtimeConfig: {
+    imagekitPrivateKey: process.env.IMAGEKIT_PRIVATE_KEY,
     public: {
-      googleTagManagerID: "GTM-P99BZNFS"
-    }
+      googleTagManagerID: "",
+      imagekitUrlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT,
+      imagekitPublicKey: process.env.IMAGEKIT_PUBLIC_KEY,
+    },
   },
   modules: [
     "@formkit/nuxt",
     "@vueuse/nuxt",
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
   ],
   colorMode: {
-    classSuffix: ''
+    classSuffix: "",
   },
   postcss: {
     plugins: {
@@ -29,4 +30,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  plugins: ["~/plugins/imagekit.ts"],
 });

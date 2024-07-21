@@ -19,18 +19,20 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.24.8",
     "@formkit/nuxt": "^1.5.2",
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@gtm-support/vue-gtm": "^2.2.0",
     "@nuxtjs/tailwindcss": "^6.11.3",
     "@vueuse/components": "^10.7.2",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",
     "gsap": "^3.12.5",
+    "imagekitio-vue": "^3.0.1",
     "vue-recaptcha-v3": "^2.0.1"
   }
 }
