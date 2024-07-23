@@ -23,5 +23,7 @@
 
   html {
     font-size: 10px;
+    touch-action: none;
+    cursor: none;
   }
 }
