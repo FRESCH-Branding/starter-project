@@ -6,17 +6,8 @@
     </NuxtLink>
 
     <ul class="flex gap-12">
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/over">Over</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/projecten">Projecten</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+      <li v-for="link in menu" class="">
+        <NuxtLink :href="link.link"> {{ link.item }} </NuxtLink>
       </li>
     </ul>
 
@@ -31,6 +22,25 @@
 
 <script setup lang="ts">
 import { ref, watch, onMounted } from "vue";
+
+const menu = [
+  {
+    item: "Home",
+    link: "/",
+  },
+  {
+    item: "Over",
+    link: "/over",
+  },
+  {
+    item: "Projecten",
+    link: "/projecten",
+  },
+  {
+    item: "Contact",
+    link: "/contact",
+  },
+];
 
 const isClicked = ref(false);
 
