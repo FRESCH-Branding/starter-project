@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     transpile: ["@fortawesome/vue-fontawesome"],
   },
   css: [
-    "~/assets/css/tailwind.css",
+    "~/assets/css/tailwind.scss",
+    "~/assets/css/swiper.scss",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
   runtimeConfig: {

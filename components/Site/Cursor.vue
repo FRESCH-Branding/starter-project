@@ -93,5 +93,6 @@ svg {
 #line-2 {
   stroke-width: 10;
   stroke-linecap: round;
+  z-index: 999;
 }
 </style>

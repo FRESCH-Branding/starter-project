@@ -34,6 +34,7 @@
     "@vueuse/nuxt": "^10.7.2",
     "gsap": "^3.12.5",
     "imagekitio-vue": "^3.0.1",
+    "swiper": "^11.1.8",
     "vue-recaptcha-v3": "^2.0.1"
   }
 }
