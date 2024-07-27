@@ -26,12 +26,4 @@ import "swiper/swiper-bundle.css";
 const modules = [Navigation, Pagination, Scrollbar];
 </script>
 
-<style lang="scss" scoped>
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  background-color: pink;
-}
-</style>
+<style lang="scss" scoped></style>
