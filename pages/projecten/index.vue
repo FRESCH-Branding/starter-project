@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <SwipersExampleSwiper />
+</template>
 
 <script setup></script>
 

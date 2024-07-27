@@ -15,19 +15,21 @@
       </div>
 
       <div class="flex justify-between text-12">
-        <ul class="flex">
+        <ul class="flex gap-4">
+          <li>
+            <NuxtLink to="/projecten">FB</NuxtLink>
+          </li>
+          <span>|</span>
           <li>{{ new Date().getFullYear() }} ©</li>
         </ul>
 
-        <ul class="flex gap-12">
+        <ul class="flex gap-4">
           <li>
             <NuxtLink to="/">Voorwaardes</NuxtLink>
           </li>
+          <span>|</span>
           <li>
             <NuxtLink to="/over">Beleid</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/projecten">FB</NuxtLink>
           </li>
         </ul>
       </div>
